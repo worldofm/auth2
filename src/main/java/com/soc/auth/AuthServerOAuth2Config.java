@@ -95,7 +95,7 @@ public class AuthServerOAuth2Config extends AuthorizationServerConfigurerAdapter
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName(env.getProperty("jdbc.driverClassName"));
+        dataSource.setDriverClassName(env.getProperty("jdbc_driverClassName"));
         dataSource.setUrl(env.getProperty("jdbc_url"));
         dataSource.setUsername(env.getProperty("jdbc_user"));
         dataSource.setPassword(env.getProperty("jdbc_pass"));
